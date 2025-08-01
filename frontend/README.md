@@ -1,12 +1,98 @@
-# React + Vite
+# Retail Data Analyzer - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built with Vite, TypeScript, and Tailwind CSS for retail data analysis and management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🚀 **Fast Development** - Built with Vite for lightning-fast development
+- 🎨 **Modern UI** - Styled with Tailwind CSS for beautiful, responsive design
+- 📱 **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- 🔄 **Type Safety** - Full TypeScript support for better development experience
+- 🧭 **Routing** - React Router for seamless navigation
+- 📊 **Analytics Dashboard** - Comprehensive analytics and insights
+- 📦 **Product Management** - Complete product catalog management
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **Lucide React** - Beautiful icons
+- **Axios** - HTTP client for API calls
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and visit `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+│   └── Navbar.tsx
+├── pages/         # Page components
+│   ├── Home.tsx
+│   ├── Products.tsx
+│   └── Analytics.tsx
+├── App.tsx        # Main app component
+├── main.tsx       # App entry point
+└── index.css      # Global styles with Tailwind
+```
+
+## Pages
+
+- **Home** - Dashboard with key metrics and quick actions
+- **Products** - Product management with search and CRUD operations
+- **Analytics** - Comprehensive analytics dashboard with charts
+
+## API Integration
+
+The app is ready to integrate with your backend API. Update the API endpoints in the components to connect with your backend services.
+
+## Customization
+
+- Modify `tailwind.config.js` to customize the design system
+- Add new routes in `App.tsx`
+- Create new components in the `components/` directory
+- Add new pages in the `pages/` directory
+
+## Deployment
+
+Build the project for production:
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory, ready for deployment to any static hosting service.
